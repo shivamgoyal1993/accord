@@ -24,7 +24,7 @@ public class ContractsController {
             this.kafkaService.sendContracts(""+Math.round(Math.random() * 999999));
         }
 
-        return new ResponseEntity<>(Map.of("message", "accord contractss sent"), HttpStatus.OK);
+        return new ResponseEntity<>(Map.of("message", "accord contracts sent"), HttpStatus.OK);
     }
 
 }
