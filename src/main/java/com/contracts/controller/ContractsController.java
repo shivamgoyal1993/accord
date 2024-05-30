@@ -21,7 +21,7 @@ public class ContractsController {
     public ResponseEntity<?> sendContracts() {
 
         for (int i = 1; i <= 10; i++) {
-            this.kafkaService.sendContracts(""+Math.round(Math.random() * 999999));
+            this.kafkaService.sendContracts("This is a Accord contract with ID: "+Math.round(Math.random() * 999999));
         }
 
         return new ResponseEntity<>(Map.of("message", "accord contracts sent"), HttpStatus.OK);
